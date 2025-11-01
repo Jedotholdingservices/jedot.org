@@ -1,48 +1,36 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jessica - Solida Company Verona</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!-- FREE DEMO SECTION -->
+<section id="demo">
+    <h2>Dimostrazione gratuita a domicilio ☕️</h2>
+    <p>Durante il nostro incontro, ti offrirò un caffè o un tè gratuito mentre ti mostro tre semplici tecnologie per migliorare aria, acqua e riposo a casa. La dimostrazione è completamente gratuita e senza impegno.</p>
 
-    <!-- HEADER / HOMEPAGE -->
-    <header>
-        <h1>Ciao, sono Jessica 🌿</h1>
-        <p>Collaboratore Solida Company per Verona. Aiuto le famiglie a scoprire tecnologie che migliorano salute e benessere a casa.</p>
-        <a href="#demo" class="btn">Prenota la tua demo gratuita</a>
-    </header>
+    <!-- FORM PRENOTAZIONE -->
+    <form id="bookingForm">
+        <input type="text" id="nome" placeholder="Nome e Cognome" required>
+        <input type="text" id="indirizzo" placeholder="Indirizzo" required>
+        <input type="text" id="citta" placeholder="Città" required>
+        <input type="tel" id="telefono" placeholder="Numero di telefono" required>
 
-    <!-- FREE DEMO SECTION -->
-    <section id="demo">
-        <h2>Dimostrazione gratuita a domicilio ☕️</h2>
-        <p>Durante il nostro incontro, ti offrirò un caffè o un tè gratuito mentre ti mostro tre semplici tecnologie per migliorare aria, acqua e riposo a casa. La dimostrazione è completamente gratuita e senza impegno.</p>
-        <a href="https://wa.me/393202359574" class="btn">Prenota ora</a>
-    </section>
+        <label for="giorno">Seleziona giorno:</label>
+        <select id="giorno" required></select>
 
-    <!-- JOB OPPORTUNITY SECTION -->
-    <section id="job">
-        <h2>Opportunità di lavoro 💼</h2>
-        <p>Vuoi unirti a Solida Company e aiutare le famiglie di Verona a migliorare la loro salute? Contattami in privato per scoprire i dettagli della collaborazione e delle opportunità di formazione.</p>
-        <a href="mailto:maryorekwu@gmail.com" class="btn">Contattami</a>
-    </section>
+        <label for="orario">Seleziona orario:</label>
+        <select id="orario" required>
+            <option value="11:30">11:30</option>
+            <option value="13:00">13:00</option>
+            <option value="14:30">14:30</option>
+            <option value="16:00">16:00</option>
+            <option value="17:30">17:30</option>
+            <option value="19:00">19:00</option>
+            <option value="20:30">20:30</option>
+        </select>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contatti 📞</h2>
-        <ul>
-            <li>WhatsApp: <a href="https://wa.me/393202359574" target="_blank">Chatta con me</a></li>
-            <li>Email: <a href="mailto:maryorekwu@gmail.com">maryorekwu@gmail.com</a></li>
-            <li>Facebook: <a href="https://www.facebook.com/share/16rYy9EbZZ/?mibextid=wwXIfr" target="_blank">Seguimi</a></li>
-        </ul>
-    </section>
+        <button type="submit" class="btn">Prenota ora</button>
+    </form>
 
-    <footer>
-        <p>© 2025 Jessica - Solida Company Verona</p>
-    </footer>
+    <p id="msg"></p>
+</section>
 
-    <script src="script.js"></script>
-</body>
-</html>
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="script.js"></script>
