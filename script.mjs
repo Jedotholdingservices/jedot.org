@@ -4,14 +4,15 @@ import { getFirestore, collection, addDoc, query, where, getDocs, serverTimestam
 
 // --- CONFIGURAZIONE FIREBASE ---
 const firebaseConfig = {
-  apiKey: "AIzaSyCC0gmQ7cLwgS4laYWBA2taJDQey12ugWE",
-  authDomain: "appuntamenti-2b593.firebaseapp.com",
-  projectId: "appuntamenti-2b593",
-  storageBucket: "appuntamenti-2b593.firebasestorage.app",
-  messagingSenderId: "935803949313",
-  appId: "1:935803949313:web:e23dfdfc586ee8b529cb00",
-  measurementId: "G-JBPKVPXY29"
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
+  measurementId: process.env.FIREBASE_MEASUREMENT_ID
 };
+
 
 // Inizializza Firebase
 const app = initializeApp(firebaseConfig);
