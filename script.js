@@ -17,7 +17,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebas
 import { getFirestore, collection, addDoc, query, where, getDocs, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "API_KEY_TUA",
+  apiKey: "AIzaSyCC0gmQ7cLwgS4laYWBA2taJDQey12ugWE",
   authDomain: "appuntamenti-2b593.firebaseapp.com",
   projectId: "appuntamenti-2b593",
   storageBucket: "appuntamenti-2b593.firebasestorage.app",
